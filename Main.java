@@ -1,40 +1,18 @@
 public class Main {
     public static void main(String[] args) {
+        Rectangle rec = new Rectangle("white", "blue");
+        System.out.println(rec.getPerimeter(10, 2));
+        System.out.println(rec.getArea(5, 2));
+        rec.getColor();
 
-        Cat[] cats = {
-            new Cat("Barsik"),
-            new Cat("Musya"),
-            new Cat("Risya")
-        };
+        Triangle tri = new Triangle("orange", "red");
+        System.out.println(tri.getPerimeter(2, 5, 10));
+        System.out.println(tri.getArea(10, 2));
+        tri.getColor();
 
-        Cat.addCatFood(50);
-
-        for (int i = 0; i < cats.length; i++) {
-            cats[i].foodEat(20);
-            cats[i].getIsFull();
-        };
-
-        cats[2].foodEat(10);
-        cats[2].getIsFull();
-        cats[2].foodEat(10);
-
-        Animal.getCount();
-        Cat.getCount();
-        Dog.getCount();
-        Dog dog1 = new Dog("Сильный");
-        Dog.getCount();
-        Animal.getCount();
-
-        cats[0].swim(0);
-        cats[0].swim(1);
-
-        cats[0].run(200);
-        cats[0].run(201);
-
-        dog1.swim(10);
-        dog1.swim(11);
-
-        dog1.run(499);
-        dog1.run(501);
+        Circle cir = new Circle("green", "purple");
+        System.out.println(cir.getPerimeter(5));
+        System.out.println(cir.getArea(5));
+        cir.getColor();
     }
 }
